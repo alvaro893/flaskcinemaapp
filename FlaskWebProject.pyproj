@@ -28,12 +28,15 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="FlaskWebProject\services\finnkino.py" />
+    <Compile Include="FlaskWebProject\services\__init__.py" />
     <Compile Include="runserver.py" />
     <Compile Include="FlaskWebProject\__init__.py" />
     <Compile Include="FlaskWebProject\views.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="FlaskWebProject\" />
+    <Folder Include="FlaskWebProject\services\" />
     <Folder Include="FlaskWebProject\static\" />
     <Folder Include="FlaskWebProject\static\content\" />
     <Folder Include="FlaskWebProject\static\fonts\" />
@@ -41,6 +44,8 @@
     <Folder Include="FlaskWebProject\templates\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="FlaskWebProject\services\finnkino.pyc" />
+    <Content Include="FlaskWebProject\services\__init__.pyc" />
     <Content Include="requirements.txt" />
     <Content Include="FlaskWebProject\static\content\bootstrap.css" />
     <Content Include="FlaskWebProject\static\content\bootstrap.min.css" />
