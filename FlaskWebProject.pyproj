@@ -41,22 +41,23 @@
     <Folder Include="FlaskWebProject\" />
     <Folder Include="FlaskWebProject\services\" />
     <Folder Include="FlaskWebProject\static\" />
-    <Folder Include="FlaskWebProject\static\content\" />
     <Folder Include="FlaskWebProject\static\fonts\" />
+    <Folder Include="FlaskWebProject\static\js\" />
     <Folder Include="FlaskWebProject\static\scripts\" />
     <Folder Include="FlaskWebProject\templates\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="flaskCinemaApp.pubxml" />
-    <None Include="flaskCinemaApp %282%29.pubxml" />
-    <None Include="FlaskWebProject.pubxml" />
-    <None Include="FlaskWebProject %282%29.pubxml" />
     <Content Include="FlaskWebProject\services\finnkino.pyc" />
     <Content Include="FlaskWebProject\services\__init__.pyc" />
+    <Content Include="FlaskWebProject\static\js\app.js" />
+    <Content Include="FlaskWebProject\static\js\bootstrap.min.js" />
+    <None Include="FlaskWebProject\static\js\jquery-1.10.2.intellisense.js" />
+    <Content Include="FlaskWebProject\static\js\jquery-1.12.0.min.js" />
+    <Content Include="FlaskWebProject\static\js\jquery.validate.min.js" />
+    <Content Include="FlaskWebProject\static\js\jquery.validate.unobtrusive.min.js" />
+    <Content Include="FlaskWebProject\static\js\modernizr-2.6.2.js" />
+    <Content Include="FlaskWebProject\templates\maincinemapage.html" />
     <Content Include="requirements.txt" />
-    <Content Include="FlaskWebProject\static\content\bootstrap.css" />
-    <Content Include="FlaskWebProject\static\content\bootstrap.min.css" />
-    <Content Include="FlaskWebProject\static\content\site.css" />
     <Content Include="FlaskWebProject\static\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="FlaskWebProject\static\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="FlaskWebProject\static\fonts\glyphicons-halflings-regular.ttf" />

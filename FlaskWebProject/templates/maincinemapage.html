@@ -3,28 +3,35 @@
 {% block content %}
 
 <div>
-    <h1>Choose area:</h1>
-    <select name="theatre" id="choose_theatre">
-    {% for id, name in areas.items() %}
-    <option value="{{ id }}">{{ name }}</option>
-    {% endfor %}
-    </select>
-    <h1>Movie list:</h1>
+    <h3 class="page-header">
+        Choose area
+    </h3>
+        <select name="theatre" id="choose_theatre">
+            {% for id, name in areas.items() %}
+            <option value="{{ id }}">{{ name }}</option>
+            {% endfor %}
+        </select>
+    
+    <h3 class="page-header">Movie list</h3>
     
     <div id="movie_container">
         <ul>
             {% for movie in movies %}
                 <li style = "list-style: none;">
-                    <div class = "movieTitle">
-                        <div id="movieImage">
-                            Image: <img src="{{movie['Picture']}}" alt="{{movie['Title']}}"/>
+                    <div class = "movieTitle jumbotron">
+                        <div class="row">
+                            <div class="col-md-4" id="movieImage">
+                                <img src="{{movie['Picture']}}" alt="{{movie['Title']}}" />
+                            </div>
+                            <div class="col-md-8">
+                                Title: {{ movie['Title'] }} - Original Title: {{ movie['OriginalTitle'] }} <br />
+                                Start: {{movie['dttmShowStart']}} - End: {{movie['dttmShowEnd']}} <br />
+                                Genre(s): {{ movie['Genres']}} <br />
+                                Auditorium: {{movie['TheatreAuditorium']}} <br />
+                                Language: {{movie['PresentationMethodAndLanguage']}} <br />
+                                Rating: <img src="{{ movie['RatingImageUrl']}}" alt />
+                            </div>
                         </div>
-                        Title: {{ movie['Title'] }} - Original Title: {{ movie['OriginalTitle'] }} <br/>
-                        Start: {{movie['dttmShowStart']}} - End: {{movie['dttmShowEnd']}} <br/>
-                        Genre(s): {{ movie['Genres']}} <br/>
-                        Auditorium: {{movie['TheatreAuditorium']}} <br/>
-                        Language: {{movie['PresentationMethodAndLanguage']}} <br/>
-                        Rating: <img src="{{ movie['RatingImageUrl']}}" alt/>
                     </div>
                 </li>
             {% endfor %}

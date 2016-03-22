@@ -26,7 +26,7 @@ class FinnKinoXML(object):
                 movie[tagname] = tagvalue
                 #print tagname, ":", tagvalue
             #id_movie = show.find('ID').text
-            movie['Picture'] = show.find('Images').find('EventSmallImagePortrait').text
+            movie['Picture'] = show.find('Images').find('EventMediumImagePortrait').text
             movie['TheatreAuditorium'] = show.find('TheatreAuditorium').text
             movie['PresentationMethodAndLanguage'] = show.find('PresentationMethodAndLanguage').text
             movie['OriginalTitle'] = show.find('OriginalTitle').text
